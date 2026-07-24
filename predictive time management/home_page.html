@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<style>
+.countdown-box {
+    border-radius: 15px;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.countdown-time {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.countdown-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.countdown-buttons button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.countdown-buttons button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+</style>
+<body>
+<div class = "countdown-time">
+    <h1>ALLOCATED TIME</h1>
+    <h2 id="timer">0</h2>
+
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
